@@ -2,7 +2,7 @@ import requests #pip install requests
 from bs4 import BeautifulSoup #pip install bs4
  
  
-url = input()
+url = input("Ask Question : ")
 
 try: 
     from googlesearch import search 
