@@ -18,9 +18,8 @@ if response.ok:
 	remaining_text_index = remaining_text.find('requested_by_viewer')-3
 	string_url = remaining_text[:remaining_text_index] 
 	X=string_url.split('\\u0026')
-	print(X)
 	string_url="&".join(X)
-	print(string_url, "\n \n downloading..........") 
+
 
 
 urllib.request.urlretrieve(string_url, "pic1.jpg")
