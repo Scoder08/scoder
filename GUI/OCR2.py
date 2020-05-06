@@ -1,15 +1,16 @@
+import cv2
+from tkinter import *
+from tkinter import filedialog
+from PIL import ImageTk,Image
+import time
+from time import sleep
+import requests
+import pygame
+from gtts import gTTS
+from tempfile import TemporaryFile
+import pyttsx3
+
 def func2():
-	import cv2
-	from tkinter import *
-	from tkinter import filedialog
-	from PIL import ImageTk,Image
-	import time
-	from time import sleep
-	import requests
-	import pygame
-	from gtts import gTTS
-	from tempfile import TemporaryFile
-	import pyttsx3
 	pygame.init()
 	key = cv2. waitKey(1)
 	webcam = cv2.VideoCapture(0)
@@ -17,7 +18,7 @@ def func2():
 	root=Tk()
 	root.title("Text")
 	root.iconbitmap('icon/eyeverse.ico')
-	def ocr_space_file(filename, overlay=False, api_key='b3026ffa6488957', language='en'):
+	def ocr_space_file(filename, overlay=False, api_key='your api key here', language='en'):
 	    """ OCR.space API request with local file.
 	        Python3.5 - not tested on 2.7
 	    :param filename: Your file path & name.
