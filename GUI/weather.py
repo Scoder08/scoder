@@ -51,7 +51,7 @@ if is_connected()==False:
 	pygame.mixer.music.play()
 
 # Enter your API key here 
-api_key = "677f3a393bd163dce7f3daf4802157f1"
+api_key = "Your api key here"
 
 # base_url variable to store url 
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
