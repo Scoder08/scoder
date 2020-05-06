@@ -112,7 +112,7 @@ def w():
 		canvas.grid(row=1,column=1,sticky="E")
 
 	# Enter your API key here 
-	api_key = "677f3a393bd163dce7f3daf4802157f1"
+	api_key = "your api key here"
 
 	# base_url variable to store url 
 	base_url = "http://api.openweathermap.org/data/2.5/weather?"
@@ -444,7 +444,7 @@ def o():
 	root=Tk()
 	root.title("Text")
 	root.iconbitmap('icon/eyeverse.ico')
-	def ocr_space_file(filename, overlay=False, api_key='b3026ffa6488957', language='en'):
+	def ocr_space_file(filename, overlay=False, api_key='your api key here', language='en'):
 	    """ OCR.space API request with local file.
 	        Python3.5 - not tested on 2.7
 	    :param filename: Your file path & name.
