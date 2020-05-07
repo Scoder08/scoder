@@ -23,6 +23,8 @@ a=urllib.request.urlopen(url,context=ctx).read()
 soup=bs(a,'html.parser')
 L=soup.find_all('div',{'id':'content'})
 print(L[0].text)
+print("======================================================")
 L=soup.find_all('div',{'class':'container'})
 for i in L:
 	print(i.text)
+	print("======================================================")
