@@ -7,7 +7,7 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-url = ' '.join(context.args)
+url = input("ask : "
 
 try: 
     from googlesearch import search 
