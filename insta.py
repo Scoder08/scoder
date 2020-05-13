@@ -5,7 +5,7 @@ import random
 import os.path 
 import urllib.request
 insta_url ='https://www.instagram.com'
-inta_username = ''.join(context.args)
+inta_username = input()
 
 response = requests.get(f"{insta_url}/{inta_username}/") 
 
