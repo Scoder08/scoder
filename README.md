@@ -1,4 +1,6 @@
 # scoder
+## [Webseries.py](webseries.py)
+==> You can download webseries just give their name seasons and episode.
 ## [GUI](GUI)
 ==> You can learn GUI every basics using tkinter and can see some of my projects
 ## [Quora.py](Quora.py)
