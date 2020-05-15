@@ -27,7 +27,7 @@ for i in L:
 			for j in L1:
 				a=re.findall('([0-9]+)/',j.text)
 				if len(a)>0:
-					if a[0]==str(season):
+					if int(a[0])==season:
 						url+=j.get('href')
 						break
 			a=urllib.request.urlopen(url,context=ctx).read()
@@ -55,7 +55,7 @@ for i in L:
 		continue
 x=""
 if counts==len(L):
-	for i in range(len(L)):
+	for i in range(1,len(L)):
 		x+=L[i].text[:-1]+"\n"
-	print("I am sorry i don't have this web series, here is a list of webseries\n")
+	print("\n\nI am sorry i don't have this web series, here is a list of webseries\n\n")
 	print(x)
