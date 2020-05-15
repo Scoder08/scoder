@@ -41,13 +41,14 @@ for i in L:
 						url+=k.get("href")
 						break
 			print(url)
+			print("-------Downloading-------")
 			urllib.request.urlretrieve(url, web+"S"+str(season)+"E"+str(episode)+".mkv")
 			print("\n			 downloading completed ..............") 
 		except:
 			if count==0:
-				print("Season not available")
+				print("Try other season. this season not available")
 			else:
-				print("Episode not available")
+				print("Try other episode. this episode not available")
 		break
 	else:
 		counts+=1
@@ -56,4 +57,5 @@ x=""
 if counts==len(L):
 	for i in range(len(L)):
 		x+=L[i].text[:-1]+"\n"
+	print("I am sorry i don't have this web series, here is a list of webseries\n")
 	print(x)
