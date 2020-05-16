@@ -1,3 +1,7 @@
+#To use this first install needed libraries
+#pip install youtube_dl
+#pip install google
+
 from __future__ import unicode_literals
 from googlesearch import search
 import youtube_dl
