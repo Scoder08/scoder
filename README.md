@@ -2,7 +2,9 @@
 ## [Webseries.py](webseries.py)
 ==> You can download webseries just give their name seasons and episode.
 ## [Yt-downloader.py](yt-downloader.py)
-==> You can download youtube videos just type what you want to search and be more specific to get perfect video.
+==> You can download youtube videos 
+- use youtube link or,
+- just type what you want to search and be more specific to get perfect video.
 ## [GUI](GUI)
 ==> You can learn GUI every basics using tkinter and can see some of my projects
 ## [Quora.py](Quora.py)
