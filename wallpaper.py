@@ -22,14 +22,7 @@ for j in search(query, tld="co.in", num=1, stop=4, pause=2):
 a=urllib.request.urlopen(url,context=ctx).read()
 soup=bs(a,'html.parser')
 L=soup.find_all('a',{'title':"Download photo"})
-x=randint(1,5)
-count=0
-for i in L:
-    count+=1
-    if count==x:
-        alink=i.get('href')
-        break
-    else:
-        continue
+x=randint(0,len(L)-1)
+alink=L[x].get('href')
 urllib.request.urlretrieve(alink, "wal.jpg")
 print("--------------------------------------------------Downloaded-----------------------------------------------")
