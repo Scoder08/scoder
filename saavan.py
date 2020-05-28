@@ -1,15 +1,15 @@
-import gevent.monkey
+import gevent.monkey #pip install gevent
 import requests
 from bs4 import BeautifulSoup
 from json import JSONDecoder
-from pyDes import *
+from pyDes import * #pip install pyDes
 import base64
 from urllib.parse import unquote
 from sys import platform
 import html
 import os
 import json
-import logger
+import logger #pip install logger
 import json
 import sys
 import ast
